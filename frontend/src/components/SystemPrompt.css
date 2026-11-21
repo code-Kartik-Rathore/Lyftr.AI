@@ -1,0 +1,65 @@
+.system-prompt {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-secondary);
+  flex-shrink: 0;
+}
+
+.system-prompt-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 24px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+.system-prompt-toggle:hover {
+  color: var(--text-primary);
+}
+
+.chevron {
+  transition: transform var(--transition);
+}
+
+.chevron.expanded {
+  transform: rotate(90deg);
+}
+
+.dot-indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.system-prompt-body {
+  padding: 0 24px 12px;
+}
+
+.system-prompt-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  resize: vertical;
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.system-prompt-textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.system-prompt-textarea:focus {
+  border-color: var(--accent);
+}
